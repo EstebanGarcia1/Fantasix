@@ -1,0 +1,34 @@
+// src/styles/player-card.scss
+
+.player-card {
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #1e1e1e; // Fondo oscuro para seguir con el estilo general de la página
+  color: #ffffff; // Texto blanco
+
+  &:hover {
+    background-color: #333; // Fondo un poco más claro al pasar el ratón
+    transform: scale(1.05); // Efecto de zoom suave al hacer hover
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .release-button {
+      background-color: #ff4d4f; // Rojo para el botón de liberar
+      color: #fff;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #d9363e; // Color más oscuro al hacer hover
+      }
+    }
+  }
+}

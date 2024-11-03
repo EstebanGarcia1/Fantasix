@@ -1,0 +1,39 @@
+.draft-screen {
+  padding: 20px;
+}
+
+.participants-container {
+  margin-bottom: 20px;
+
+  .participant-select {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .participants-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
+
+    .participant-card {
+      min-width: 200px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.teams-container {
+  .teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .team-card {
+    background-color: #2e2e2e; // dark background for better contrast
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}

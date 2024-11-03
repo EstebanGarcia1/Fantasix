@@ -1,0 +1,32 @@
+// src/styles/teamCard.scss
+
+.team-card {
+    background-color: #2c2c2e;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+  
+    .team-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      .team-logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        transition: transform 0.3s;
+      }
+  
+      &:hover .team-logo {
+        transform: rotate(20deg); // Logo rota levemente al hacer hover.
+      }
+    }
+  }
+  

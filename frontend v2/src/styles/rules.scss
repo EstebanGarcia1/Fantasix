@@ -1,0 +1,35 @@
+/* src/styles/rules.scss */
+
+.rules-screen {
+    padding: 20px;
+  
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+  
+    .rules-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+  
+      .rule-card {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        background: #fafafa;
+  
+        &:hover {
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+  
+        p {
+          margin-top: 10px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  

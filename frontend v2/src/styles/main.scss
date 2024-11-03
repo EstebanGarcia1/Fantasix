@@ -1,0 +1,25 @@
+// src/styles/main.scss
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; // Si usas Tailwind
+    cursor: pointer;
+}
+
+input {
+    @apply border rounded p-2 mb-2; // Si usas Tailwind
+}
+
+h2 {
+    @apply text-xl font-semibold; // Si usas Tailwind
+}

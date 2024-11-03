@@ -1,0 +1,25 @@
+// src/styles/participantCard.scss
+
+.participant-card {
+    background-color: #2c2c2e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #444;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+  
+    .participant-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  
+      &:hover {
+        color: #00bcd4; // Cambia el color del nombre al pasar el ratón.
+      }
+    }
+  }
+  

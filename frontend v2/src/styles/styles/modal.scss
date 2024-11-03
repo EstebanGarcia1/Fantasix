@@ -1,0 +1,59 @@
+// src/styles/modal.scss
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+  }
+  
+  .modal-content {
+    background: #2c2c2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: slideIn 0.5s;
+  
+    h2 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #e5e5e5;
+      margin-bottom: 20px;
+    }
+  
+    .modal-actions {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

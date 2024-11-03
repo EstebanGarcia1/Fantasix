@@ -1,0 +1,60 @@
+// src/styles/clasificacion.scss
+
+.clasificacion-screen {
+  padding: 20px;
+
+  .clasificacion-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .clasificacion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .participant-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+
+    .participant-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .participant-name {
+        font-weight: bold;
+      }
+
+      .participant-score {
+        color: #777;
+      }
+    }
+
+    .participant-details {
+      margin-top: 10px;
+      background-color: #f3f3f3;
+      padding: 10px;
+      border-radius: 4px;
+
+      .details-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .pick-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+    }
+  }
+}
